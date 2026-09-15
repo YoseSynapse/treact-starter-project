@@ -667,7 +667,10 @@ footer {
 
 .footer__brand img {
     width: 150px;
-    filter: brightness(0) invert(1);
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    filter: none;
 }
 
 .footer__brand p {
