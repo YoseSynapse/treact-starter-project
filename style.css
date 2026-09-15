@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --primary: #ec4899;
     --primary-dark: #d91e7a;
@@ -11,8 +13,6 @@
     --footer-dark: #3d2a89;
     --shadow: rgba(36, 62, 99, 0.16);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
