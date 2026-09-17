@@ -362,5 +362,87 @@ footer { padding: 96px 32px; background-color: #6415ff; }
   .feature__row { flex-direction: column; align-items: center; text-align: center; }
   .feature__text { margin-left: 0; margin-top: 16px; }
   .feature__title { text-align: center; }
+
+
+/* MOBILE FIXES -- mentor review: center content + fit text on small screens */
+@media (max-width: 640px) {
+  /* Headings fit on small screens */
+  h1,
+  .section__title {
+    font-size: 32px;
+  }
+
+  /* Quality Work: centered, breathing room on the sides */
+  #quality .row {
+    align-items: center;
+  }
+  .quality__description {
+    margin-right: 0;
+    padding: 0 24px;
+  }
+  .quality__img--wrapper {
+    margin: 32px 0 0 0;
+  }
+
+  /* Steps ("Easy to Get Started"): everything centered */
+  .steps__description {
+    padding: 0 24px;
+  }
+  .steps__description .section__tag,
+  .steps__description .section__title,
+  .steps__description .section__para {
+    text-align: center;
+  }
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .step__description {
+    margin-left: 0;
+    margin-top: 12px;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Values + Testimonials: centered, no desktop side padding */
+  .values__description {
+    padding: 0 24px;
+  }
+  .values__description .section__tag,
+  .values__description .section__title,
+  .values__description .section__para,
+  .testimonials__description .section__tag,
+  .testimonials__description .section__title,
+  .testimonials__description .section__para {
+    text-align: center;
+  }
+  .value__para {
+    text-align: center;
+  }
+  .testimonials__description {
+    padding: 32px 24px 0 24px;
+  }
+
+  /* Header email: input + button stacked, both full width */
+  .header__email {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+  }
+  .header__email--input {
+    position: static;
+    padding: 16px 32px;
+  }
+  .header__email--btn {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    margin: 16px 0 0 0;
+  }
+  .header__customers {
+    padding-right: 0;
+  }
+}
 }
 
