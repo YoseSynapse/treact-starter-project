@@ -206,12 +206,12 @@ h1 { text-align: left; }
 /* PRICING -- Step 6: rebuild three cards */
 #pricing .row { display: flex; flex-direction: column; align-items: center; }
 #pricing .section__para { max-width: 576px; }
-.plans { display: flex; flex-direction: row; justify-content: center; gap: 24px; margin-top: 64px; flex-wrap: wrap; }
+.plans { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: stretch; gap: 24px; margin-top: 64px; }
 .plan {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex: 1 1 320px;      /* share space evenly, shrink together, never wrap */
   max-width: 24rem;
   border-radius: 0.5rem;
   padding: 0 2rem;
@@ -346,6 +346,7 @@ footer { padding: 96px 32px; background-color: #6415ff; }
   .values__list { flex-direction: column; align-items: center; } /* stacked again on mobile */
   .value { align-items: center; margin-right: 0; }
   .plans { flex-direction: column; align-items: center; }
+  .plan { flex: 0 1 auto; width: 100%; }
   .start__row { flex-direction: column; text-align: center; }
   .start__title { text-align: center; width: 100%; }
   .start__buttons { margin-top: 24px; }
