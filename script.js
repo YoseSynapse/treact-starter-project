@@ -5,4 +5,3 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu--open');
 }
-<form class="header__email" onsubmit="event.preventDefault()"></form>
